@@ -32,11 +32,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :development do
-  gem 'pry-rails'
+group :test, :development do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'valid_attribute'
+  gem 'shoulda-matchers'
+  gem 'pry-rails'
 end
 
 # Use ActiveModel has_secure_password
